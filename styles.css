@@ -42,14 +42,12 @@ p {
 }
 
 .wrapper {
-  display: flex;
-  margin-top: 10vh;
-  max-width: 700px;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  grid-template-rows: 1fr 1fr;
   padding: 1rem;
-}
-
-.content {
-  margin-left: 2rem;
+  margin-top: 10vh;
+  max-width: 720px;
 }
 
 .logo {
@@ -57,17 +55,17 @@ p {
   max-width: 120px;
 }
 
+.disclaimer {
+  grid-column: 2;
+  font-size: 0.6rem;
+  color: #CCC;
+}
+
 @media (max-width: 759px) {
   .wrapper {
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 1rem;
+    display: block;
+    margin-top: 2rem;
   }
-
-  .content {
-    margin-left: 0;
-  }
-
   .logo {
     margin-bottom: 2rem;
   }
