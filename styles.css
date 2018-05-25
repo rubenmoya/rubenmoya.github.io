@@ -44,7 +44,7 @@ p {
 .wrapper {
   display: grid;
   grid-template-columns: 140px 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
   padding: 1rem;
   margin-top: 10vh;
   max-width: 720px;
